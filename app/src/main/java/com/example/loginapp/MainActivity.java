@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
         EditText userName = (EditText) findViewById(R.id.userName);
         EditText password = (EditText) findViewById(R.id.password);
         Log.i("login", "username : " +userName.getText().toString() +" | password : " +password.getText().toString());
+        Toast.makeText(this, "Logged in", Toast.LENGTH_SHORT).show();
     }
 
     @Override
